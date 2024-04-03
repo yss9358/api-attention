@@ -16,7 +16,7 @@ public class OrderController {
 	private OrderService orderService;
 	
 	// OrderVo로 데이터를 받아서 bill 테이블 등록 + sales 테이블 등록 
-	@PostMapping("/at/pays")
+	@PostMapping("/attention/pays")
 	public JsonResult addOrder(@RequestBody OrderVo vo) {
 		int orderNo = orderService.exeAddOrder(vo);
 		if(orderNo != -1) {
